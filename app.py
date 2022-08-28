@@ -1,5 +1,5 @@
 from flask import Flask, request,render_template
-from deta import Deta
+# from deta import Deta
 import webbrowser
 from nlp import Search_NLP # 自作モジュール
 
