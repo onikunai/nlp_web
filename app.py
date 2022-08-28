@@ -32,7 +32,8 @@ def form():
         # webbro = webbrowser.get('chrome')
         # webbro.open(url, new=2)
         # webbrowser.get('chrome').open(url, new=2, autoraise=True)
-        webbrowser.open_new_tab(url)
+        # webbrowser.open_new_tab(url)
+        webbrowser.open(url, new=1)
         
         return render_template('form.html')
     # GET処理
