@@ -1,0 +1,4 @@
+flask==2.2.2
+ja-ginza==5.1.2
+spacy==3.4.1
+markupsafe==2.1.1
