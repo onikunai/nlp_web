@@ -25,10 +25,10 @@ def form():
         　　　　　1:新しいウインドウ、.open_new()メソッドと同じ動作
         　　　　　2:新しいタブ、.open_new_tab()メソッドと同じ動作
         '''
-        if webbrowser.get('chrome'):
-            print('OK')
-        else:
-            print('ng')
+        # if webbrowser.get('chrome'):
+        #     print('OK')
+        # else:
+        #     print('ng')
         # webbro = webbrowser.get('chrome')
         # webbro.open(url, new=2)
         # webbrowser.get('chrome').open(url, new=2, autoraise=True)
