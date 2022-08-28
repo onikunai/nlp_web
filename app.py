@@ -33,9 +33,9 @@ def form():
         # webbro.open(url, new=2)
         # webbrowser.get('chrome').open(url, new=2, autoraise=True)
         # webbrowser.open_new_tab(url)
-        webbrowser.open(url, new=1)
+        # webbrowser.open(url, new=1)
         
-        return render_template('jump.html')
+        return render_template('jump.html', url=url)
     # GET処理
     else:
         return render_template('form.html')
