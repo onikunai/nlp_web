@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request,render_template
 # from deta import Deta
 import webbrowser
@@ -34,4 +35,8 @@ def form():
 # アプリケーションを動かすためのおまじない
 if __name__ == "__main__":
     # app.run(port = 8000, debug=True)
-    app.run(debug=True,  host='0.0.0.0', port=9999) # ポートの変更
+    #port = os.Getenv("PORT")
+    #if port == "":
+    #    port = "8000"
+    #app.run(debug=True,  host='0.0.0.0', port=port) # ポートの変更
+    app.run(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
