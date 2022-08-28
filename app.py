@@ -35,7 +35,7 @@ def form():
         # webbrowser.open_new_tab(url)
         webbrowser.open(url, new=1)
         
-        return render_template('form.html')
+        return render_template('jump.html')
     # GET処理
     else:
         return render_template('form.html')
