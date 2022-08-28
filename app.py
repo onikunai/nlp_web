@@ -33,4 +33,5 @@ def form():
 
 # アプリケーションを動かすためのおまじない
 if __name__ == "__main__":
-    app.run(port = 3000, debug=True)
+    # app.run(port = 8000, debug=True)
+    app.run(debug=True,  host='0.0.0.0', port=9999) # ポートの変更
