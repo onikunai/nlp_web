@@ -25,7 +25,7 @@ def form():
         　　　　　1:新しいウインドウ、.open_new()メソッドと同じ動作
         　　　　　2:新しいタブ、.open_new_tab()メソッドと同じ動作
         '''
-        webbrowser.open(url, new=0, autoraise=True)
+        webbrowser.get().open(url, new=2, autoraise=True)
         
         return render_template('form.html')
     # GET処理
